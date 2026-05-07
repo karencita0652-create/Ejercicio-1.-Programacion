@@ -1,5 +1,6 @@
 from modelos.cliente import Cliente
 from modelos.servicios import ReservaSala
+from modelos.reserva import Reserva
 from utils.logger import registrar_error
 
 try:
@@ -8,9 +9,11 @@ try:
 
     servicio1 = ReservaSala("Sala VIP", 100)
 
-    print(cliente1.nombre)
+    reserva1 = Reserva(cliente1, servicio1)
 
-    print(servicio1.mostrar_servicio())
+    print(reserva1.mostrar_reserva())
+
+    print(reserva1.confirmar())
 
 except Exception as e:
 
