@@ -5,3 +5,6 @@ class Cliente:
         self.nombre = nombre
         self.email = email
         self.edad = edad
+
+        if "@" not in email:
+            raise Exception("Correo inválido")
