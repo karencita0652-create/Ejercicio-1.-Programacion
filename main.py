@@ -5,7 +5,7 @@ from utils.logger import registrar_error
 
 try:
 
-    cliente1 = Cliente("Juan", "juan@gmail.com", 25)
+    cliente1 = Cliente("Ana", "correo_malo", 15)
 
     servicio1 = ReservaSala("Sala VIP", 100)
 
@@ -13,10 +13,10 @@ try:
 
     print(reserva1.mostrar_reserva())
 
-    print(reserva1.confirmar())
-
 except Exception as e:
 
     print("Error:", e)
 
     registrar_error(str(e))
+
+print("El sistema sigue funcionando")
