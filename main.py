@@ -50,5 +50,6 @@ except Exception as e:
 
     registrar_error(str(e))
 
-
+finally:
+    
 print("EL SISTEMA SIGUE FUNCIONANDO")
